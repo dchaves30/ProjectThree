@@ -54,28 +54,28 @@ class ViewController: UIViewController {
 //************** BUTTON ACTIONS ***************************\\
     
     @IBAction func pushDownOne() {
-        switchString(.Down)
+        switchString(.down)
         
     }
     
     @IBAction func pushHalfUpOne() {
-        switchString(textPosition: .upHalfOne)
+        switchString(.upHalfOne)
         
     }
     @IBAction func pushHalfDownOne() {
-        switchString(textPosition: .downHalfOne)
+        switchString(.downHalfOne)
         
     }
     @IBAction func pushHalfUpTwo() {
-        switchString(textPosition: .upHalfTwo)
+        switchString(.upHalfTwo)
         
     }
     @IBAction func pushHalfDownTwo() {
-        switchString(textPosition: .downHalfTwo)
+        switchString(.downHalfTwo)
         
     }
     @IBAction func pushUpTwo() {
-        switchString(textPosition: .Up)
+        switchString(.up)
         
     }
     @IBAction func checkAnswerTest() {
@@ -119,17 +119,17 @@ class ViewController: UIViewController {
         }
     }
     
-    func loadNextRoundWithDelay(seconds: Int) {
-        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
-        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
-        // Calculates a time value to execute the method given current time and delay
-        let dispatchTime = DispatchTime(DIS)
-        
-        // Executes the nextRound method at the dispatch time on the main queue
-        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
-            self.nextRound()
-        }
-    }
+//    func loadNextRoundWithDelay(seconds: Int) {
+//        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
+//        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
+//        // Calculates a time value to execute the method given current time and delay
+//        let dispatchTime = DispatchTime(DIS)
+//        
+//        // Executes the nextRound method at the dispatch time on the main queue
+//        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
+//            self.nextRound()
+//        }
+//    }
 
 
 }
