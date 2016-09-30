@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     var questions = gameQuestions()
     var allRoundQuestions:[[String:Any]] = [[:]]
     let questionsPerRound = 6
-    var roundQuestions = 0
-    var seconds = 0
+    var roundQuestions = 1
+    var seconds = 1
     var appTimer = Timer()
-    var timerIsOn = false
+    var timeIsUp = false
+    var score:Int = 0
     
 
     @IBOutlet weak var downButtonOne: UIButton!
@@ -43,6 +44,7 @@ class ViewController: UIViewController {
         loadButtons()
         loadQuestions()
         startTimer()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,11 +81,14 @@ class ViewController: UIViewController {
         
     }
     @IBAction func checkAnswerTest() {
-        checkAnswer()
+        nextRound()
     }
 
 //***************** Helper Methods *****************************
-    //TIMER
+    
+    
+    
+    //TIMER*****************
     
      func startTimer(){
         appTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:#selector(ViewController.updateTimer), userInfo: nil, repeats: true)
@@ -94,6 +99,13 @@ class ViewController: UIViewController {
         timer.text = "\(seconds)"
         if seconds == 60 {
             stopTimer()
+            checkAnswer()
+            timeIsUp = true
+        }
+        else{
+            nextRoundButton.isEnabled = false
+            timeIsUp = false
+            
         }
     }
     
@@ -104,33 +116,67 @@ class ViewController: UIViewController {
         nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
     }
     
-    //END TIMER
+    //END TIMER*************
     
     
     //PLAY NEXT ROUND
+   //FIXME: Review these below!
     func nextRound() {
+        nextRoundButton.isEnabled = false
+        seconds = 1
+        timer.text = "\(seconds)"
         if roundQuestions == questionsPerRound {
             // Game is over
-           // displayScore()
+           gameOver()
         } else {
             // Continue game
             loadQuestions()
-            nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
+            startTimer()
         }
     }
     
-//    func loadNextRoundWithDelay(seconds: Int) {
-//        // Converts a delay in seconds to nanoseconds as signed 64 bit integer
-//        let delay = Int64(NSEC_PER_SEC * UInt64(seconds))
-//        // Calculates a time value to execute the method given current time and delay
-//        let dispatchTime = DispatchTime(DIS)
-//        
-//        // Executes the nextRound method at the dispatch time on the main queue
-//        DispatchQueue.main.asyncAfter(deadline: dispatchTime) {
-//            self.nextRound()
-//        }
-//    }
-
+    func loadQuestions() {
+        
+        var counter = 0
+        roundQuestions += 1
+        nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
+        nextRoundButton.isEnabled = false
+        allRoundQuestions = questions.getRandomQuestions()
+        informationPanel.text = ""
+        timer.text = "\(seconds)"
+        
+        
+        //print(allRoundQuestions)
+        
+        for n in allRoundQuestions {
+            let question:String = n["question"] as! String
+            
+            labelCollection[counter].text = question
+            
+            let year:Int = n["year"] as! Int
+            print(year)
+            
+            counter += 1
+        }
+    }
+    
+    func gameOver() {
+        let gameOver = UIAlertController(title: "Game Over", message: "Your score was \(score). Click OK to play again.", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: resetGame)
+        gameOver.addAction(okAction)
+        present(gameOver, animated: true, completion: nil)
+        roundQuestions = 0
+    }
+    
+    func resetGame(sender: UIAlertAction) {
+        roundQuestions = 0
+        score = 0
+        seconds = 1
+        loadQuestions()
+        startTimer()
+        
+    }
 
 }
 

@@ -29,6 +29,9 @@ extension ViewController {
         buttonImage(#imageLiteral(resourceName: "up_half"), pushed: #imageLiteral(resourceName: "up_half_selected"), buttonName: upButtonThree)
         buttonImage(#imageLiteral(resourceName: "up_full"), pushed: #imageLiteral(resourceName: "up_full_selected"), buttonName: upButtonFour)
     }
+    
+    func buttonState() {
+        
+    }
 }
-
 

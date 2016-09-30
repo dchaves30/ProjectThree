@@ -10,24 +10,7 @@ import Foundation
 extension ViewController {
 
     
-    func loadQuestions() {
-        
-        var counter = 0
-        
-        allRoundQuestions = questions.getRandomQuestions()
-        //print(allRoundQuestions)
-        
-        for n in allRoundQuestions {
-            let question:String = n["question"] as! String
-            
-            labelCollection[counter].text = question
-            
-            let year:Int = n["year"] as! Int
-            print(year)
-            
-            counter += 1
-        }
-    }
+
     
 }
 

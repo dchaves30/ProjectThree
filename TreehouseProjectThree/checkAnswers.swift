@@ -7,12 +7,30 @@
 //
 
 import Foundation
+import UIKit
 
 extension ViewController {
+    
+
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+        print("Device was shaken!")
+            if timeIsUp == false {
+                stopTimer()
+                checkAnswer()
+            }
+            else {
+                
+                return()
+            }
+            
+        }
+    
     
     func checkAnswer() {
         
         var yearArray:[Int] = []
+        nextRoundButton.isEnabled = true
+        seconds = 0
         
         for n in allRoundQuestions{
             
@@ -22,13 +40,21 @@ extension ViewController {
                 }
         if yearArray[0] < yearArray[1] && yearArray[1] < yearArray [2] && yearArray[2] < yearArray[3]
         {
-            print("winner")
+            score += 15
+            informationPanel.text = "CORRECT!"
+            nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
         }
         else {
-            print("looser")
+            informationPanel.text = "INCORRECT!"
+            nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_fail"), for: .normal)
         }
                 
     }
+    
+//    func timeIsUp() {
+//        
+//        if 
+//    }
     
  
 }
