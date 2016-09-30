@@ -24,7 +24,7 @@
 		9FDC70861D9CB150001D61B5 /* checkAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkAnswers.swift; sourceTree = "<group>"; };
 		FE4412CA1D90E00200249023 /* LoadQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadQuestions.swift; sourceTree = "<group>"; };
 		FE7CC6821D8B749300B7E4D4 /* loadButtonImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loadButtonImages.swift; path = ../loadButtonImages.swift; sourceTree = "<group>"; };
-		FEC9F1FA1D8A2A110010424E /* Bout Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC9F1FA1D8A2A110010424E /* Bout Jazz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Jazz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC9F1FD1D8A2A110010424E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEC9F1FF1D8A2A110010424E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEC9F2021D8A2A110010424E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		FEC9F1FB1D8A2A110010424E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FEC9F1FA1D8A2A110010424E /* Bout Time.app */,
+				FEC9F1FA1D8A2A110010424E /* Bout Jazz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FEC9F1F91D8A2A110010424E /* Bout Time */ = {
+		FEC9F1F91D8A2A110010424E /* Bout Jazz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FEC9F20C1D8A2A110010424E /* Build configuration list for PBXNativeTarget "Bout Time" */;
+			buildConfigurationList = FEC9F20C1D8A2A110010424E /* Build configuration list for PBXNativeTarget "Bout Jazz" */;
 			buildPhases = (
 				FEC9F1F61D8A2A110010424E /* Sources */,
 				FEC9F1F71D8A2A110010424E /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = "Bout Time";
+			name = "Bout Jazz";
 			productName = TreehouseProjectThree;
-			productReference = FEC9F1FA1D8A2A110010424E /* Bout Time.app */;
+			productReference = FEC9F1FA1D8A2A110010424E /* Bout Jazz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FEC9F1F51D8A2A110010424E /* Build configuration list for PBXProject "Bout Time" */;
+			buildConfigurationList = FEC9F1F51D8A2A110010424E /* Build configuration list for PBXProject "Bout Jazz" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -130,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FEC9F1F91D8A2A110010424E /* Bout Time */,
+				FEC9F1F91D8A2A110010424E /* Bout Jazz */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FEC9F1F51D8A2A110010424E /* Build configuration list for PBXProject "Bout Time" */ = {
+		FEC9F1F51D8A2A110010424E /* Build configuration list for PBXProject "Bout Jazz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEC9F20A1D8A2A110010424E /* Debug */,
@@ -316,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEC9F20C1D8A2A110010424E /* Build configuration list for PBXNativeTarget "Bout Time" */ = {
+		FEC9F20C1D8A2A110010424E /* Build configuration list for PBXNativeTarget "Bout Jazz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FEC9F20D1D8A2A110010424E /* Debug */,

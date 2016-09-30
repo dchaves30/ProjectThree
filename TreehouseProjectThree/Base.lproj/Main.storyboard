@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,157 +15,109 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Tap events to know more" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJU-MT-9rf">
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="35" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MT-2s-bhE">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="72" id="qYj-Nw-kwf"/>
-                                    <constraint firstAttribute="height" constant="75" id="x9q-V6-dnW"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PED-47-jqJ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="SHJ-AW-ms5"/>
-                                </constraints>
-                                <state key="normal" image="next_round_success"/>
-                                <connections>
-                                    <action selector="checkAnswerTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9g-mD-qy8"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-GT-EF5">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Wc7-qW-B6j"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBG-yv-Qzq">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-GT-EF5">
+                                <frame key="frameInset" minX="37" minY="53" width="295" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-c9-5PY">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="RNA-05-72B"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBG-yv-Qzq">
+                                <frame key="frameInset" minX="37" minY="186" width="295" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr9-c9-5PY">
+                                <frame key="frameInset" minX="332" minY="186" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="up_half"/>
                                 <connections>
                                     <action selector="pushHalfUpOne" destination="BYZ-38-t0r" eventType="touchUpInside" id="gXg-gl-zOA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfV-jA-xBk">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Y2J-fN-kol"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfV-jA-xBk">
+                                <frame key="frameInset" minX="332" minY="236" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="down_half"/>
                                 <connections>
                                     <action selector="pushHalfDownOne" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSt-4M-aDF"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-Dq-vpG">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="xsA-dQ-UyA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Na-aQJ">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="vcf-Yp-iSv"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EH-Na-aQJ">
+                                <frame key="frameInset" minX="332" minY="315" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="up_half"/>
                                 <connections>
                                     <action selector="pushHalfUpTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="prP-Mm-IFO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-zA-dGb">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="xQq-jC-YTq"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-zA-dGb">
+                                <frame key="frameInset" minX="332" minY="365" width="46" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="down_half"/>
                                 <connections>
                                     <action selector="pushHalfDownTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="AC6-ii-pbD"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-5q-cNk">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-5q-cNk">
+                                <frame key="frameInset" minX="37" minY="445" width="295" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqu-de-JZc">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="eVF-tc-I0i"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqu-de-JZc">
+                                <frame key="frameInset" minX="332" minY="445" width="46" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="up_full"/>
                                 <connections>
                                     <action selector="pushUpTwo" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hi3-rH-Slo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CS-Ut-7UV">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="WY9-7M-YfC"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CS-Ut-7UV">
+                                <frame key="frameInset" minX="332" minY="53" width="46" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="down_full"/>
                                 <connections>
                                     <action selector="pushDownOne" destination="BYZ-38-t0r" eventType="touchUpInside" id="lte-iA-KkI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PED-47-jqJ">
+                                <frame key="frameInset" minX="69" minY="569" width="157" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="next_round_success"/>
+                                <connections>
+                                    <action selector="checkAnswerTest" destination="BYZ-38-t0r" eventType="touchUpInside" id="y9g-mD-qy8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="249" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Jazz evolved in New Orleans, which is often considered the most musical city in the U.S." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-Dq-vpG">
+                                <frame key="frameInset" minX="37" minY="315" width="295" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="35" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MT-2s-bhE">
+                                <frame key="frameInset" minX="260" minY="552" width="72" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Tap events to know more" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJU-MT-9rf">
+                                <frame key="frameInset" minX="69" minY="617" width="263" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.14117647059999999" blue="0.30867456896551726" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="8CS-Ut-7UV" secondAttribute="trailing" constant="29" id="0wx-rt-Maf"/>
-                            <constraint firstItem="Pqu-de-JZc" firstAttribute="leading" secondItem="bI1-zA-dGb" secondAttribute="leading" id="1cT-dH-4aX"/>
-                            <constraint firstItem="ZBG-yv-Qzq" firstAttribute="bottom" secondItem="nfV-jA-xBk" secondAttribute="bottom" id="2Bm-GN-Me2"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="leading" secondItem="dr9-c9-5PY" secondAttribute="leading" id="2c4-CM-1sT"/>
-                            <constraint firstItem="Pqu-de-JZc" firstAttribute="bottom" secondItem="rIy-5q-cNk" secondAttribute="bottom" id="3yE-3R-cyQ"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="bottom" secondItem="bI1-zA-dGb" secondAttribute="bottom" id="80n-QC-VC9"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="295" id="8hv-qk-BtX"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="trailing" secondItem="bI1-zA-dGb" secondAttribute="trailing" id="8tm-Lt-PD0"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="trailing" secondItem="2EH-Na-aQJ" secondAttribute="trailing" id="AVY-br-klm"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="top" secondItem="Tk2-GT-EF5" secondAttribute="top" id="Aqt-SB-ECd"/>
-                            <constraint firstItem="rIy-5q-cNk" firstAttribute="top" secondItem="8sO-Dq-vpG" secondAttribute="bottom" constant="13" id="D02-jq-pA1"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="trailing" secondItem="Tk2-GT-EF5" secondAttribute="trailing" id="DuW-kz-BGp"/>
-                            <constraint firstItem="Pqu-de-JZc" firstAttribute="top" secondItem="rIy-5q-cNk" secondAttribute="top" id="FSU-0O-t9W"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="leading" secondItem="2EH-Na-aQJ" secondAttribute="leading" id="GAf-fb-OS8"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="leading" secondItem="8sO-Dq-vpG" secondAttribute="leading" id="MUs-IT-3m0"/>
-                            <constraint firstItem="PED-47-jqJ" firstAttribute="top" secondItem="kJU-MT-9rf" secondAttribute="bottom" constant="9" id="N3c-af-Tf0"/>
-                            <constraint firstItem="8MT-2s-bhE" firstAttribute="leading" secondItem="PED-47-jqJ" secondAttribute="trailing" constant="35" id="OOx-pO-Nuo"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8MT-2s-bhE" secondAttribute="bottom" constant="56" id="PTM-bm-ECO"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="leading" secondItem="nfV-jA-xBk" secondAttribute="leading" id="R5n-hd-Mee"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="bottom" secondItem="Tk2-GT-EF5" secondAttribute="bottom" id="WA1-5Z-wD3"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="top" secondItem="2EH-Na-aQJ" secondAttribute="top" id="WJC-hP-0kJ"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="XeZ-Hx-Pgs"/>
-                            <constraint firstItem="Pqu-de-JZc" firstAttribute="trailing" secondItem="bI1-zA-dGb" secondAttribute="trailing" id="YH5-Tw-lJu"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="trailing" secondItem="rIy-5q-cNk" secondAttribute="trailing" id="Ylq-4E-ZRf"/>
-                            <constraint firstItem="8MT-2s-bhE" firstAttribute="centerY" secondItem="PED-47-jqJ" secondAttribute="centerY" id="Z9V-X5-pc7"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="leading" secondItem="Tk2-GT-EF5" secondAttribute="trailing" id="ZXK-4J-muS"/>
-                            <constraint firstItem="8sO-Dq-vpG" firstAttribute="top" secondItem="ZBG-yv-Qzq" secondAttribute="bottom" constant="14" id="dFV-Dg-WVR"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="leading" secondItem="bI1-zA-dGb" secondAttribute="leading" id="dcJ-Ee-g7B"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="leading" secondItem="rIy-5q-cNk" secondAttribute="leading" id="fog-oL-DcA"/>
-                            <constraint firstItem="8MT-2s-bhE" firstAttribute="trailing" secondItem="kJU-MT-9rf" secondAttribute="trailing" id="h4e-hQ-4Bp"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="trailing" secondItem="nfV-jA-xBk" secondAttribute="trailing" id="hOp-8P-bZI"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="trailing" secondItem="dr9-c9-5PY" secondAttribute="trailing" id="hpC-AE-3Oh"/>
-                            <constraint firstItem="ZBG-yv-Qzq" firstAttribute="top" secondItem="dr9-c9-5PY" secondAttribute="top" id="jcz-gb-Ol3"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="leading" secondItem="PED-47-jqJ" secondAttribute="leading" id="mcX-lA-myC"/>
-                            <constraint firstItem="dr9-c9-5PY" firstAttribute="top" secondItem="8CS-Ut-7UV" secondAttribute="bottom" constant="15" id="mwh-fE-3Bt"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8MT-2s-bhE" secondAttribute="trailing" constant="40" id="nfp-11-bt8"/>
-                            <constraint firstItem="ZBG-yv-Qzq" firstAttribute="leading" secondItem="8sO-Dq-vpG" secondAttribute="leading" id="rpt-na-EU2"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="top" secondItem="Pqu-de-JZc" secondAttribute="bottom" constant="2" id="udE-7M-FGf"/>
-                            <constraint firstItem="ZBG-yv-Qzq" firstAttribute="trailing" secondItem="8sO-Dq-vpG" secondAttribute="trailing" id="wOX-aV-CJc"/>
-                            <constraint firstItem="kJU-MT-9rf" firstAttribute="leading" secondItem="Tk2-GT-EF5" secondAttribute="leading" id="xdh-bj-4oX"/>
-                            <constraint firstItem="8CS-Ut-7UV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="xfD-bn-uzO"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="downButtonOne" destination="8CS-Ut-7UV" id="BTX-PH-1o3"/>
@@ -190,14 +141,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="30"/>
+            <point key="canvasLocation" x="208.69565217391306" y="28.532608695652176"/>
         </scene>
     </scenes>
     <resources>
-        <image name="down_full" width="79" height="228"/>
-        <image name="down_half" width="79" height="114"/>
-        <image name="next_round_success" width="279" height="71"/>
-        <image name="up_full" width="79" height="228"/>
-        <image name="up_half" width="79" height="114"/>
+        <image name="down_full" width="52" height="152"/>
+        <image name="down_half" width="52" height="76"/>
+        <image name="next_round_success" width="186" height="47"/>
+        <image name="up_full" width="52" height="152"/>
+        <image name="up_half" width="52" height="76"/>
     </resources>
 </document>
