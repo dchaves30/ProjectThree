@@ -11,6 +11,8 @@ import Foundation
 extension ViewController {
 
     
+// reaarange round questions according user preference.
+    
     enum moveQuestions {
         case down
         case upHalfOne

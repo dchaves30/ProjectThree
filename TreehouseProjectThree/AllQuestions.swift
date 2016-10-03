@@ -11,10 +11,10 @@ import GameKit
 
 struct gameQuestions {
     
-    let questionPerRound:Int = 4
-    var question:[[String:Any]] = []
-    var counter = 0
-    var newIndex = 0
+    let questionPerRound:Int = 4   // represents the total number of questions per round
+    var question:[[String:Any]] = []     //Stores the random questions from the historicalEvents array of dictionaries
+    var counter = 0                         //control for arry insertion
+    var newIndex = 0                       // control for managing repeated questions
     
     let historicalEvents:[[String:Any]] = [
     ["question":"The first Africans are sold into slavery in America.","year":1619],
@@ -99,6 +99,8 @@ struct gameQuestions {
     
     ]
     
+    //Generates and stores 4 random questions from historicalEvents
+    
     mutating func getRandomQuestions() -> [[String:Any]]{
         
         
@@ -106,6 +108,8 @@ struct gameQuestions {
         counter = 0
         
         var indexOfSelectedQuestion:Int = 0
+        
+        // while counter < than 4 (max number of questions) inserts random dictionaries from historicalEvents in the "question" array and return the array containing four dictionaries.
         
         while counter < questionPerRound {
             

@@ -12,6 +12,8 @@ import UIKit
 extension ViewController {
     
 
+   //Check the answers when user shake his phone
+    //Stop timer
     override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         print("Device was shaken!")
             if timeIsUp == false {
@@ -25,6 +27,8 @@ extension ViewController {
             
         }
     
+    //Check if the answer are chronologically ordered using the "year" key. The ealiest events shall be on the top and the latest on the botton.
+    //Assing points to each correct sequence and display "correct" for correct order or "incorrect for chronological order of events
     
     func checkAnswer() {
         
@@ -40,7 +44,7 @@ extension ViewController {
                 }
         if yearArray[0] < yearArray[1] && yearArray[1] < yearArray [2] && yearArray[2] < yearArray[3]
         {
-            score += 15
+            score += 1
             informationPanel.text = "CORRECT!"
             nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
         }
@@ -51,12 +55,6 @@ extension ViewController {
                 
     }
     
-//    func timeIsUp() {
-//        
-//        if 
-//    }
-    
- 
 }
 
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9F49EFC01D9B7253008F7536 /* moveQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F49EFBF1D9B7253008F7536 /* moveQuestions.swift */; };
 		9FDC70871D9CB150001D61B5 /* checkAnswers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FDC70861D9CB150001D61B5 /* checkAnswers.swift */; };
-		FE4412CB1D90E00200249023 /* LoadQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4412CA1D90E00200249023 /* LoadQuestions.swift */; };
 		FE7CC6831D8B749300B7E4D4 /* loadButtonImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7CC6821D8B749300B7E4D4 /* loadButtonImages.swift */; };
 		FEC9F1FE1D8A2A110010424E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9F1FD1D8A2A110010424E /* AppDelegate.swift */; };
 		FEC9F2001D8A2A110010424E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC9F1FF1D8A2A110010424E /* ViewController.swift */; };
@@ -22,7 +21,6 @@
 /* Begin PBXFileReference section */
 		9F49EFBF1D9B7253008F7536 /* moveQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = moveQuestions.swift; sourceTree = "<group>"; };
 		9FDC70861D9CB150001D61B5 /* checkAnswers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkAnswers.swift; sourceTree = "<group>"; };
-		FE4412CA1D90E00200249023 /* LoadQuestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadQuestions.swift; sourceTree = "<group>"; };
 		FE7CC6821D8B749300B7E4D4 /* loadButtonImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loadButtonImages.swift; path = ../loadButtonImages.swift; sourceTree = "<group>"; };
 		FEC9F1FA1D8A2A110010424E /* Bout Jazz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bout Jazz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC9F1FD1D8A2A110010424E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				FEC9F2011D8A2A110010424E /* Main.storyboard */,
 				FE7CC6821D8B749300B7E4D4 /* loadButtonImages.swift */,
 				FEC9F20F1D8A2B490010424E /* AllQuestions.swift */,
-				FE4412CA1D90E00200249023 /* LoadQuestions.swift */,
 				9F49EFBF1D9B7253008F7536 /* moveQuestions.swift */,
 				9FDC70861D9CB150001D61B5 /* checkAnswers.swift */,
 				FEC9F2041D8A2A110010424E /* Assets.xcassets */,
@@ -156,7 +153,6 @@
 				FEC9F2001D8A2A110010424E /* ViewController.swift in Sources */,
 				9FDC70871D9CB150001D61B5 /* checkAnswers.swift in Sources */,
 				FEC9F2101D8A2B490010424E /* AllQuestions.swift in Sources */,
-				FE4412CB1D90E00200249023 /* LoadQuestions.swift in Sources */,
 				FEC9F1FE1D8A2A110010424E /* AppDelegate.swift in Sources */,
 				FE7CC6831D8B749300B7E4D4 /* loadButtonImages.swift in Sources */,
 				9F49EFC01D9B7253008F7536 /* moveQuestions.swift in Sources */,

@@ -11,16 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    var questions = gameQuestions()
-    var allRoundQuestions:[[String:Any]] = [[:]]
-    let questionsPerRound = 6
-    var roundQuestions = 1
-    var seconds = 1
-    var appTimer = Timer()
-    var timeIsUp = false
-    var score:Int = 0
-    
+    var questions = gameQuestions()                     //gameQuestions's instance
 
+    var allRoundQuestions:[[String:Any]] = [[:]]        //Stores the random questions coming from
+    let questionsPerRound = 6                           //number of rounds per game
+    var roundQuestions = 1                              //variable that holds number of played rounds
+    var seconds = 1                                     // timer variable
+    var appTimer = Timer()                              //Timer
+    var timeIsUp = false                                //variable to check if 60 seconds has passed
+    var score:Int = 1                                   // hold game score
+    
+//Game buttons and labels.
     @IBOutlet weak var downButtonOne: UIButton!
     @IBOutlet weak var upButtonTwo: UIButton!
     @IBOutlet weak var downButtonTwo: UIButton!
@@ -34,16 +35,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondLabelTop: UITextView!
     @IBOutlet weak var thirdLabelBotton: UITextView!
     @IBOutlet weak var fourthLabelBotton: UITextView!
-    @IBOutlet var labelCollection: [UITextView]!
-    
-    
+    @IBOutlet var labelCollection: [UITextView]!  // collection of labels for the questions. 
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadButtons()
-        loadQuestions()
-        startTimer()
+        loadButtons() //load the images to the buttons
+        loadQuestions() //show the game questions in the labels
+        startTimer() //start game timer.
         
     }
 
@@ -88,7 +87,7 @@ class ViewController: UIViewController {
     
     
     
-    //TIMER*****************
+    //Game TIMER*****************
     
      func startTimer(){
         appTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:#selector(ViewController.updateTimer), userInfo: nil, repeats: true)
@@ -120,11 +119,12 @@ class ViewController: UIViewController {
     
     
     //PLAY NEXT ROUND
-   //FIXME: Review these below!
     func nextRound() {
-        nextRoundButton.isEnabled = false
-        seconds = 1
+        nextRoundButton.isEnabled = false //disable button when round starts
+        seconds = 1                         //reset timer
         timer.text = "\(seconds)"
+        
+        //Check if user already played 6 rounds
         if roundQuestions == questionsPerRound {
             // Game is over
            gameOver()
@@ -135,19 +135,19 @@ class ViewController: UIViewController {
         }
     }
     
+    // This function loads four questions per round, reset the counter, increment the # of rounds and present the timer on the screen
+    
     func loadQuestions() {
         
         var counter = 0
         roundQuestions += 1
         nextRoundButton.setImage(#imageLiteral(resourceName: "next_round_success"), for: .normal)
         nextRoundButton.isEnabled = false
-        allRoundQuestions = questions.getRandomQuestions()
+        allRoundQuestions = questions.getRandomQuestions()      //Assign 4 random dictionaries for the manipulation of questions and verification of chronological order.
         informationPanel.text = ""
         timer.text = "\(seconds)"
         
-        
-        //print(allRoundQuestions)
-        
+        // This functions is for debugging purposes. It checks if the user's answers are indeed correct or incorrect based on the top-botton earliest-latest events chronological order.
         for n in allRoundQuestions {
             let question:String = n["question"] as! String
             
@@ -160,14 +160,18 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    //Display the number of correct rounds and asks if the player wants to play again.
     func gameOver() {
-        let gameOver = UIAlertController(title: "Game Over", message: "Your score was \(score). Click OK to play again.", preferredStyle: .alert)
+        let gameOver = UIAlertController(title: "Game Over", message: "You got \(score) correct rounds. Click OK to play again.", preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: .default, handler: resetGame)
         gameOver.addAction(okAction)
         present(gameOver, animated: true, completion: nil)
         roundQuestions = 0
     }
+    
+    //Reset all the game counters once the player starts a new game.
     
     func resetGame(sender: UIAlertAction) {
         roundQuestions = 0
