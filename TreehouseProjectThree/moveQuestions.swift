@@ -50,6 +50,8 @@ extension ViewController {
             swap(&labelCollection[3].text, &labelCollection[2].text)
         }
         
+        
+        //For Debugging : shows the questions' year order once a button is pushed
         for n in allRoundQuestions {
             print(n["year"])
             
